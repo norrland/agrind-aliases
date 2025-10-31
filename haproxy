@@ -1,0 +1,4 @@
+keyword = "haproxy_httplog"
+template = """
+parse "* * *: *:* [*] * */* */*/*/*/* * * * * * */*/*/*/* */* \\"* * *\\"" as timestamp, hostname, process, srcip, srcport, request_date, frontend, backend, server_name, TR, Tw, Tc, Tr, Ta, http_status, bytes_read, captured_request_cookie, captured_response_cookie, termination_state, actconn, feconn, beconn, srv_conn, retries, srv_queue, backend_queue, http_method, http_path, http_version"
+"""
